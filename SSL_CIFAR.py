@@ -292,7 +292,7 @@ def main():
                                        batch_size=bs * mu, num_workers=4, drop_last=True, pin_memory=True)
     testloader = DataLoader(testset, sampler=SequentialSampler(testset), num_workers=4, batch_size=bs, pin_memory=True)
 
-    # Wide ResNet-28-2 comme demandé dans l'énoncé
+    # Wide ResNet-28-2 comme utilisé par kekmodel
     model = WideResNet(depth=28, widen_factor=2, drop_rate=0, num_classes=nb_classes)
     model.to(device)
 
