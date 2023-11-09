@@ -1,6 +1,6 @@
 # Semi-Supervised Learning for image classification on CIFAR-10
 
-The goal of this project was to study a simple but effective model for Semi-Supervised Learning : **FixMatch. <br>
+The goal of this project was to study a simple but effective model for Semi-Supervised Learning : **FixMatch**. <br>
 This [very good blogpost by Amit Chaudhary](https://amitness.com/2020/03/fixmatch-semi-supervised/) explains the main points of the approach, which allows to reach **95% top-1 accuracy** for classification by **using only 250 labelled images** (25 randomly selected images per class) out of the 60 000 of the CIFAR-10 dataset.
 
 Of particular interest to me was understanding what made this implementation so effective. Indeed, FixMatch relies on a Wide ResNet, which is not a particulary exotic model, and two key, but classical, principles of Semi-Supervised Learning :
